@@ -213,7 +213,6 @@ nav
 		color: #fff
 
 .mobile
-
 	min-height: 864px
 	padding: 48px 0 79px 0
 	background: url('../img/bg/mobile_bg.png') center (center/cover) no-repeat
@@ -370,97 +369,73 @@ nav
 		text-transform: uppercase
 		text-decoration: none
 
-footer
-	padding: 30px 23px
-	min-height: 134px
-
-	.divider
+.footer
+	&_mobile
+		a
+			text-decoration: none
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: $colorBlue
 		margin: 0 auto
-		width: 301px
-		height: 7px
-		background: $colorBlue
-	.links
+		margin-top: 15px
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
 		display: flex
 		justify-content: space-between
-		margin-top: 30px
-		&_social
-
-			display: flex
-			justify-content: space-around
-			min-width: 165px
-
-			.link
-				width: 35px
-				height: 35px
-				background-color: #000
-				border-radius: 100%
-				display: flex
-				justify-content: center
-				align-items: center
-				&:hover
-					background-color: $colorBlue
-
-		&_market
-			display: flex
-			justify-content: space-between
-			min-width: 295px
-
-		&_page
-			// transform: translateX(60px)
-			.first
-
-				min-width: 365px
-				margin: 0 auto
-				padding: 0 10px
-				ul
-					display: flex
-					justify-content: space-between
-					list-style-type: none
-					padding-left: 0
-					margin-bottom: 0
-					a
-						text-decoration: none
-						font-weight: 300
-						font-size: 15px
-						text-transform: uppercase
-						color: #070716
-						&:hover
-							color: red
-			.second
-				min-width: 395px
-				margin: 0 auto
-				ul
-					display: flex
-					justify-content: space-between
-					list-style-type: none
-					padding-left: 0
-					margin-bottom: 0
-					a
-						text-decoration: none
-						font-weight: 300
-						font-size: 11px
-						text-transform: uppercase
-						color: #070716
-						&:hover
-							color: red
-
-	.wrapper
-		width: 33%
-		display: flex
-		&:nth-child(3)
-			justify-content: end
-			
-
-	.language
-		display: block
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
 		margin: 0 auto
-		font-weight: 400
-		font-size: 11px
-		line-height: 68px
-		text-align: center
-		text-transform: uppercase
-		color: $colorBlue
-		text-decoration: none
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+				text-decoration: none
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+				text-decoration: none
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
 
 .xs-visible
 	display: none
